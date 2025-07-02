@@ -1,0 +1,31 @@
+Upstream-Status: Pending
+diff --git a/alarm.py b/alarm.py
+index a2f2ecb..cb5062e 100644
+--- a/alarm.py
++++ b/alarm.py
+@@ -1,4 +1,4 @@
+-#!/bin/python3
++#!/usr/bin/python3
+ # SPDX-FileCopyrightText: 2024 BARTHELEMY Stephane  stephane@sbarthelemy.com
+ # SPDX-License-Identifier: ISC
+ 
+diff --git a/testapp/testmodem.py b/testapp/testmodem.py
+index cd8c3b2..66bef70 100755
+--- a/testapp/testmodem.py
++++ b/testapp/testmodem.py
+@@ -1,4 +1,4 @@
+-#!/bin/python3
++#!/usr/bin/python3
+ # SPDX-FileCopyrightText: 2024 BARTHELEMY Stephane  stephane@sbarthelemy.com
+ # SPDX-License-Identifier: ISC
+ 
+diff --git a/testapp/testmodemserial.py b/testapp/testmodemserial.py
+index 2e1d710..5934c51 100755
+--- a/testapp/testmodemserial.py
++++ b/testapp/testmodemserial.py
+@@ -1,4 +1,4 @@
+-#!/bin/python3
++#!/usr/bin/python3
+ # SPDX-FileCopyrightText: 2024 BARTHELEMY Stephane  stephane@sbarthelemy.com
+ # SPDX-License-Identifier: ISC
+ 

@@ -1,0 +1,14 @@
+Upstream-Status: Pending
+diff --git a/alarm.py b/alarm.py
+index 8c8ea15..f4ddeb2 100644
+--- a/alarm.py
++++ b/alarm.py
+@@ -15,7 +15,7 @@ from myemail import MyEmail
+ from myipcamera import MyIpCamera
+ from myloop import MyLoop
+ from mymodem import MyModem
+-from mytelegram import MyTelegram
++#from mytelegram import MyTelegram
+ from myusbcamera import MyUsbCamera
+ from myserial import MySerial
+ from myutils import MyUtils

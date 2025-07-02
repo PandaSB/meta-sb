@@ -1,0 +1,10 @@
+[Unit]
+Description=Alarm
+Afer=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/alarm
+ExecStart=/usr/bin/python3 alarm.py
+KillSignal=SIGINT
+Restart=Always

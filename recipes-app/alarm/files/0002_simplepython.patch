@@ -1,0 +1,93 @@
+Upstream-Status: Pending
+diff --git a/alarm.py b/alarm.py
+index cb5062e..8c8ea15 100644
+--- a/alarm.py
++++ b/alarm.py
+@@ -5,7 +5,7 @@
+ import configparser
+ import os
+ import time
+-import json
++import simplejson as json
+ import shutil
+ import datetime
+ import subprocess
+diff --git a/alarm_record/alarm_record.py b/alarm_record/alarm_record.py
+index 3486f90..6153b43 100644
+--- a/alarm_record/alarm_record.py
++++ b/alarm_record/alarm_record.py
+@@ -5,7 +5,7 @@ import sqlite3
+ import os.path
+ import paho.mqtt.client as mqtt
+ import configparser
+-import json
++import simplejson as json
+ 
+ 
+ DB_Name             = None
+@@ -187,4 +187,4 @@ def main():
+ 
+ 
+ if __name__ == "__main__":
+-    main()
+\ No newline at end of file
++    main()
+diff --git a/myaws.py b/myaws.py
+index 85cd08a..abe6d4d 100644
+--- a/myaws.py
++++ b/myaws.py
+@@ -8,7 +8,7 @@ import paho.mqtt.client as mqtt
+ from threading import Thread
+ import ssl
+ import os
+-import json
++import simplejson as json
+ from myutils import MyUtils
+ 
+ 
+@@ -123,4 +123,4 @@ class MyAws:
+             print ("Connect ok aws Iot")
+ 
+         thread = Thread(target=self.start_pulling)
+-        thread.start()
+\ No newline at end of file
++        thread.start()
+diff --git a/mymodem.py b/mymodem.py
+index b1f40c9..1ade15f 100644
+--- a/mymodem.py
++++ b/mymodem.py
+@@ -2,7 +2,7 @@
+ # SPDX-License-Identifier: ISC
+ 
+ import time
+-import json
++import simplejson as json
+ import shlex
+ import serial
+ from subprocess import STDOUT, CalledProcessError, check_output
+diff --git a/mymqtt.py b/mymqtt.py
+index 6c42531..44d3c5c 100644
+--- a/mymqtt.py
++++ b/mymqtt.py
+@@ -9,7 +9,7 @@ import time
+ import paho.mqtt.client as mqtt
+ from threading import Thread
+ import os
+-import json
++import simplejson as json
+ from myutils import MyUtils
+ 
+ mymqtt_endpoint = ''
+diff --git a/testapp/testmodem.py b/testapp/testmodem.py
+index 66bef70..d828617 100755
+--- a/testapp/testmodem.py
++++ b/testapp/testmodem.py
+@@ -4,7 +4,7 @@
+ 
+ from subprocess import STDOUT, CalledProcessError, check_output
+ import shlex
+-import json
++import simplejson as json
+ 
+ 
+ def action_sms ( phone, content ):
